@@ -2,14 +2,13 @@
  * Switch function
  * @type {function}
  */
-var $el = 'switch-button',              //Element to target
-    speed = 300,                        //Animation speed
-    animating = false,                  //Animating state
-    nstyle = '1',                       //Applied color (1 to 3)
-    style = 'checked-button-' + nstyle; //Class by applied style
+var $el = 'switch-button',
+    speed = 300,
+    animating = false,
+    nstyle = '1', //1 = Apple green,2 = Apple blue,3 = Apple red
+    style = 'checked-button-' + nstyle;
 function switchThis(){
-    var inputid = $(this).attr('input-name'),
-        state = $(this).attr('state');
+    var inputid = $(this).attr('input-id'), state = $(this).attr('state');
     if(animating === false){
         if(state === 'false'){
             animating = true;
@@ -33,8 +32,8 @@ function switchThis(){
 $(document).ready(function(){
     $('.' + $el + '').each(function(){
         if($(this).attr('type') === 'checkbox'){
-            var name = $(this).attr('name');
-            $(this).before('<div class="switching-button-contener" input-name="'+name+'" state="false"><div></div><span class="on"></span><span class="off"></span></div>');
+            var id = $(this).attr('id');
+            $(this).before('<div class="switching-button-contener" input-id="'+id+'" state="false"><div></div><span class="on"></span><span class="off"></span></div>');
         }
     });
     $('.switching-button-contener').on('click', switchThis);
