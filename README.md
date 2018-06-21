@@ -5,6 +5,6 @@ Switch Button Project
 # Only requires jQuery
 
 ## How to use it?
-# Create a checkbox input
-# Add the 'switch-button' class
-# Enjoy
+### Create a checkbox input
+### Add the 'switch-button' class
+### Enjoy
