@@ -1,0 +1,56 @@
+.switch-button{
+    display: none;
+}
+.switching-button-contener{
+    height: 22px;
+    width: 44px;
+    background: #d9dadc;
+    border-radius: 100px;
+    padding: 2px;
+    display: inline-block;
+    transition: .3s;
+    z-index: 1;
+    position: relative;
+}
+.checked-button-1{
+    background: #4bd865;
+    transition: .3s;
+}
+.checked-button-2{
+    background: #39b4f7;
+    transition: .3s;
+}
+.checked-button-3{
+    background: #e03a3c;
+    transition: .3s;
+}
+.switching-button-contener div{
+    z-index: 3;
+    height: 16px;
+    width: 16px;
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 3px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+}
+.switching-button-contener .on{
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    height: 10px;
+    width: 1px;
+    background: white;
+    z-index: -1;
+}
+.switching-button-contener .off{
+    position: absolute;
+    right: 7px;
+    top: 9px;
+    height: 7px;
+    width: 7px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    z-index: -1;
+}
