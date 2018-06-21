@@ -8,18 +8,43 @@
     <script type="text/javascript" src="js/easing.min.js"></script>
     <script type="text/javascript" src="js/switch.dev.js"></script>
     <style>
+        /* These css lines aren't necessary*/
         body{
             width: 1000px;
             margin: 100px auto;
+            display: flex;
+        }
+        form{
+            padding: 25px;
+            height: 160px;
+            width: 40%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background: #e2e2e2;
+        }
+        input{
+            margin: auto;
+        }
+        .switching-button-contener{
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <form method="get" action="index.html">
-        <input type="checkbox" class="switch-button" name="test" id="test"/>Assombrir<br />
-        <input type="checkbox" class="switch-button" name="test2" id="test2"/><br />
-        <input type="checkbox" class="switch-button" name="test3" id="test3"/>
-        <input type="submit" />
-    </form>
+<!-- Basic inputs -->
+<form method="get" action="index.html">
+    <input type="checkbox" name="test"/><br />
+    <input type="checkbox" name="test2"/><br />
+    <input type="checkbox" name="test3"/><br />
+    <input type="checkbox" class="switch-button" name="test4" id="test4"/><br />
+    <input type="submit" />
+</form>
+<!-- Modified inputs -->
+<form method="get" action="index.html">
+    <input type="checkbox" class="switch-button" name="test5" id="test5"/><br />
+    <input type="checkbox" class="switch-button" name="test6" id="test6"/><br />
+    <input type="submit" />
+</form>
 </body>
 </html>
