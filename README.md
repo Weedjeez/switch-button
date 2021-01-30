@@ -8,7 +8,7 @@ Only requires jQuery and the Easing extension.
 * Add an id with the input's name as content
 * Enjoy
 
-Here is how it hould look like :
+Here is how it should look like:
 ```
 <input type="checkbox" class="switch-button" name="example" id="example" />
 ```
